@@ -1,0 +1,314 @@
+/* Variables */ /* Function list*/ /* mixins list */ /* Function list*/
+body {
+  color: #171717 !important;
+  background-color: #fbfbfb !important;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 250px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+}
+
+input:focus, button:focus {
+  outline: none !important;
+}
+
+ul {
+  list-style: none !important;
+  padding: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #171717 !important;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, ul {
+  margin: 0 !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+header {
+  box-shadow: 4px 0 6px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #e5e5e5;
+}
+header .logo--title {
+  color: #6b6c6f;
+}
+header img {
+  width: 2.1875rem;
+  height: 2.1875rem;
+}
+header .drop--icon {
+  color: #787a7d;
+  font-size: 18px;
+}
+header .lang--icon {
+  color: #787a7d;
+}
+
+aside.left--aside {
+  box-shadow: 4px 0 6px rgba(0, 0, 0, 0.05);
+  border-right: 1px solid #e5e5e5;
+  max-width: 270px;
+}
+aside.left--aside .section--link {
+  transition: all 0.2s;
+  padding-left: 1.875rem;
+  font-size: 0.9375rem;
+}
+aside.left--aside .section--link:hover {
+  color: #1665d8 !important;
+  background-color: #f1f5fa;
+}
+aside.left--aside .aside--footer {
+  border-top: 1px solid #e5e5e5;
+}
+aside.left--aside .footer--link {
+  color: #171717 !important;
+  font-weight: 500;
+  opacity: 0.6;
+  font-size: 0.875rem;
+  transition: opacity 0.2s !important;
+}
+aside.left--aside .footer--link:hover {
+  opacity: 0.9;
+}
+
+aside {
+  overflow-y: auto;
+  padding: 0 !important;
+  margin: 0 !important;
+  max-height: calc(100vh - 52px);
+  height: calc(100vh - 52px);
+}
+aside .title--section {
+  color: #787a7d;
+  font-size: 14px;
+}
+
+aside.right--aside {
+  box-shadow: -4px 0 6px rgba(0, 0, 0, 0.05);
+  border-left: 1px solid #e5e5e5;
+  max-width: 270px;
+}
+aside.right--aside .user--avatar {
+  width: 2.375rem;
+  height: 2.375rem;
+}
+aside.right--aside .user--list:hover {
+  transition: all 0.2s;
+  cursor: pointer;
+}
+aside.right--aside .user--list:hover:hover {
+  color: #1665d8 !important;
+  background-color: #f1f5fa;
+}
+
+article {
+  height: calc(100vh - 52px);
+  max-height: calc(100vh - 52px);
+  overflow-y: auto;
+}
+article .frame {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ededed;
+  border-radius: 8px;
+}
+article .cover {
+  border-radius: 8px 8px 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 768px) {
+  article .cover {
+    height: 150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  article .cover {
+    height: 400px;
+  }
+}
+article .cover button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 0.875rem !important;
+  background-color: #fff;
+  font-weight: 400 !important;
+}
+@media screen and (max-width: 768px) {
+  article .cover button {
+    font-size: 0.8125rem !important;
+  }
+}
+article .cover::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.5));
+}
+article .cover img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+}
+@media screen and (max-width: 768px) {
+  article .cover img {
+    width: 70px;
+    height: 70px;
+    left: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  article .cover img {
+    width: 120px;
+    height: 120px;
+    left: 30px;
+  }
+}
+article .cover h5 {
+  color: #fff;
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  article .cover h5 {
+    left: 170px;
+    font-size: 1.5rem !important;
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  article .cover h5 {
+    left: 100px;
+    font-size: 1.2rem !important;
+    bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  article .profil--tabs {
+    margin-left: 170px;
+  }
+}
+@media screen and (max-width: 768px) {
+  article .profil--tabs {
+    padding: 35px 20px 0 20px;
+  }
+}
+
+.tab {
+  font-size: 1.0625rem;
+  color: #787a7d;
+  padding: 1.625rem 0;
+}
+.tab.active {
+  border-bottom: 3px solid #1665d8;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .tab {
+    padding: 1.25rem 0 !important;
+  }
+}
+
+.friend--frame .tab {
+  padding: 1.25rem;
+}
+@media screen and (max-width: 768px) {
+  .friend--frame .tab {
+    padding: 0.9375rem !important;
+  }
+}
+.friend--frame .item--friend img {
+  width: 3.4375rem;
+  height: 3.4375rem;
+}
+.friend--frame .item--friend {
+  border: 1px solid #ededed;
+  border: 2px 2px 5px rgba(0, 0, 0, 0.05) inset;
+  border-radius: 3px;
+}
+.friend--frame .friends {
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9375rem;
+}
+@media screen and (max-width: 768px) {
+  .friend--frame .friends {
+    grid-template-columns: 1fr;
+  }
+}
+
+.title--frame {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.about--frame .about--item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.about--frame .about--avatar {
+  width: 2.8125rem;
+  height: 2.8125rem;
+}
+.about--frame .big--title {
+  font-size: 0.9375rem;
+  color: #787a7d;
+}
+.about--frame .mid--title {
+  font-size: 0.875rem;
+  color: #787a7d;
+}
+.about--frame strong {
+  font-weight: 500;
+  color: #171717;
+}
+.about--frame .icon--cont {
+  color: #787a7d;
+  font-size: 1.2rem;
+  border: 1px solid #e5e5e5;
+}
+
+@media screen and (min-width: 768px) {
+  .b-remove1 {
+    border: 0 !important;
+  }
+}
+
+.b-remove2 {
+  border: 0 !important;
+}/*# sourceMappingURL=begin.css.map */
